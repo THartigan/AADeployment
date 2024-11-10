@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct AADeployment_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandingView()
         }
+        .modelContainer(for: [Alarm.self])
     }
 }
